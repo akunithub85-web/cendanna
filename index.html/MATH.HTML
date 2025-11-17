@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1" />
+<title>Menentukan Harga Satuan Produk dengan SPLTV</title>
+<style>
+  body {
+    margin: 0;
+    padding: 20px;
+    background-color: #5b8652; /* hijau tua */
+    font-family: Arial, sans-serif;
+    color: #114422; /* hijau tua */
+  }
+  .container {
+    max-width: 480px;
+    background-color: #ecdcab;
+    margin: 0 auto;
+    padding: 25px 30px;
+    border-radius: 15px;
+    box-shadow: 0 6px 12px rgba(17, 68, 34, 0.15);
+  }
+  h1 {
+    color: #000;
+    font-size: 1.5em;
+    text-align: center;
+    margin-bottom: 25px;
+  }
+  p, pre {
+    font-size: 1em;
+    line-height: 1.6;
+    margin: 10px 0;
+  }
+  strong {
+    color: #000;
+  }
+  .section-title {
+    font-weight: 700;
+    margin-top: 20px;
+    color: #000;
+  }
+  pre {
+    background: transparent;
+    border: none;
+    padding: 0;
+    margin: 10px 0 20px 0;
+    font-family: monospace;
+    white-space: pre-wrap;
+  }
+</style>
+</head>
+<body>
+
+<h1>Menentukan Harga Satuan Produk dengan SPLTV</h1>
+<div class="container">
+  <p class="section-title">Misal:</p>
+  <p>x = Harga 1 bunga</p>
+  <p>y = Harga 1 lampu hias</p>
+  <p>z = Harga 1 jam dari motherboard bekas</p>
+
+  <p class="section-title">Model SPLTV:</p>
+  <pre>
+x + 2y + 3z = 236.000 ... (1)
+
+4x + y + z= 139.000 ... (2)
+
+x + 3y + 2z = 261.000 ... (3)
+  </pre>
+
+  <p class="section-title">Eliminasi y Persamaan (1) dan (2)</p>
+  <pre>
+x + 2y + 3z = 236.000
+
+4x + y + z = 139.000
+
+------------------------ -
+
+ = -42.000
+  </pre>
+
+  <p class="section-title">Eliminasi y Persamaan (1) dan (3)</p>
+  <pre>
+ x + 2y + 3z = 236.000
+
+x + 3y + 2z = 261.000
+
+------------------------ -
+
+ = 186.000
+  </pre>
+
+  <p class="section-title">Eliminasi x Persamaan (4) dan (5)</p>
+  <pre>
+-7x + z = -42.000
+
+x + 5z = 186.000
+
+------------------------ -
+
+ z= 35.000
+  </pre>
+
+  <p class="section-title">Substitusi</p>
+  <pre>
+x + 5z = 186.000
+x+5(35.000) = 186.000
+x+5(175.000) = 186.000
+             =186.000-175.000
+            x=11.000
+  </pre>
+
+  <p class="section-title">Substitusi</p>
+  <pre>
+4x + y + z = 139.000
+4(11.000)+ y +35.000 = 139.000
+44.000 + y + 35.000= 139.000
+                  y=139.000-35.000-44.000
+                  y=60.000
+  </pre>
+
+  <p class="section-title">Hasil Akhir:</p>
+  <p>Harga 1 bunga dari botol bekas = <strong>Rp11.000</strong></p>
+  <p>Harga 1 lampu hias = <strong>Rp 60.000</strong></p>
+  <p>Harga 1 jam dari motherboard bekas = <strong>RP. 35.000</strong></p>
+</div>
+
+</body>
+</html>
